@@ -3,10 +3,7 @@ import { ShieldCheck, Trees, Landmark, Users } from "lucide-react";
 import type { StaticImageData } from "next/image";
 
 export const heroImages: { src: string; alt: string; aiHint: string }[] = [
-  { src: "https://i.postimg.cc/C1yFnRbZ/bldg-3-20x30.jpg", alt: "Modern building exterior", aiHint: "modern building" },
-  { src: "https://i.postimg.cc/1tYbVTkv/SHREERAM-SAMPAADA-RESIDENTIAL-E-BROCHURE-page-0002.jpg", alt: "Shreeram Sampaada brochure", aiHint: "brochure" },
-  { src: "https://i.postimg.cc/xCH16v9y/bldg-5-20x30.jpg", alt: "Side view of a modern building", aiHint: "modern building" },
-  { src: "https://i.postimg.cc/9Xq56X50/Whats-App-Image-2025-08-26-at-5-25-31-PM.jpg", alt: "Shiv Aashish Industrial Estate building", aiHint: "industrial building" },
+  { src: "https://i.postimg.cc/RFWSHpWd/palghar-s-most-iconic-project.jpg", alt: "Presenting Palghar's Most Iconic Project", aiHint: "modern building exterior" },
 ];
 
 export const projects = [
@@ -136,7 +133,7 @@ export const testimonials = [
   },
   {
     quote: "We were impressed by the modern design and the thoughtful layout of the apartment. It feels spacious and gets plenty of natural light. A great investment.",
-    author: "The D'souza Family",
+    author: "The D\'souza Family",
     location: "Homeowners, Navkar Heights",
     rating: 5,
   }
@@ -159,7 +156,7 @@ export const careerOpenings = [
     location: "Mumbai, Maharashtra",
     type: "Full-time",
     department: "Engineering",
-    description: "We are looking for an experienced Senior Civil Engineer to join our team. The ideal candidate will have a strong background in residential and commercial projects, with a proven track record of managing projects from conception to completion.",
+    description: "We are looking for an experienced Senior Civil Engineer to join our team. The ideal candidate will have a a strong background in residential and commercial projects, with a proven track record of managing projects from conception to completion.",
     responsibilities: [
       "Oversee and manage all aspects of construction projects.",
       "Ensure compliance with safety regulations and building codes.",

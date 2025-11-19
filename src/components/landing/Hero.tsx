@@ -4,14 +4,6 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { stats, heroImages } from "@/lib/data";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 import { Counter } from "./Counter";
 import { motion } from "framer-motion";
 
@@ -22,44 +14,29 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="bg-background">
-      <div className="py-16 md:py-24">
+    <section id="home" className="relative bg-background">
+      <div className="absolute inset-0">
+          <div className="relative aspect-video w-full h-screen overflow-hidden bg-background">
+            <Image
+              src={heroImages[0].src}
+              alt={heroImages[0].alt}
+              data-ai-hint={heroImages[0].aiHint}
+              fill
+              className="object-cover"
+              priority
+            />
+        <div className="absolute inset-0 bg-black/15" />
+      </div>
+      </div>
+
+      <div className="relative z-10 py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4">
-          {/* Media Carousel */}
-          <Carousel
-            className="w-full rounded-2xl overflow-hidden shadow-2xl"
-            opts={{ loop: true }}
-            plugins={[
-              Autoplay({
-                delay: 3000,
-                stopOnInteraction: true,
-              }),
-            ]}
-          >
-            <CarouselContent>
-              {heroImages.map((image, index) => (
-                <CarouselItem key={index}>
-                  <div className="relative aspect-video w-full overflow-hidden bg-background">
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      data-ai-hint={image.aiHint}
-                      fill
-                      className="object-cover"
-                      priority={index === 0}
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="absolute left-4 text-primary-foreground bg-primary/50 hover:bg-primary" />
-            <CarouselNext className="absolute right-4 text-primary-foreground bg-primary/50 hover:bg-primary" />
-          </Carousel>
+          <div className="h-[50vh]"></div>
         </div>
       </div>
 
       {/* Stats Section */}
-      <div className="pb-16 md:pb-24">
+      <div className="relative z-10 pb-16 md:pb-24">
         <div className="mx-auto max-w-7xl px-4 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {stats.map((s, index) => (
             <motion.div
