@@ -4,6 +4,7 @@
 import { useEffect } from "react";
 import { Header } from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
+import Stats from "@/components/landing/Stats";
 import { Projects } from "@/components/landing/Projects";
 import { About } from "@/components/landing/About";
 import { WhyNavkar } from "@/components/landing/WhyNavkar";
@@ -30,6 +31,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <Stats />
         <Separator />
         <Projects />
         <Separator />

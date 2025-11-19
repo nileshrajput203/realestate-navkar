@@ -3,7 +3,7 @@ import { ShieldCheck, Trees, Landmark, Users } from "lucide-react";
 import type { StaticImageData } from "next/image";
 
 export const heroImages: { src: string; alt: string; aiHint: string }[] = [
-  { src: "https://i.postimg.cc/RFWSHpWd/palghar-s-most-iconic-project.jpg", alt: "Presenting Palghar's Most Iconic Project", aiHint: "modern building exterior" },
+  { src: "/banner.png", alt: "Presenting Palghar's Most Iconic Project", aiHint: "modern building exterior" },
 ];
 
 export const projects = [
