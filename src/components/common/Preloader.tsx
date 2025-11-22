@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { NavkarLogo } from "@/components/landing/NavkarLogo";
+import Image from "next/image";
 
 export function Preloader() {
   const [isLoading, setIsLoading] = useState(true);
@@ -55,7 +55,7 @@ export function Preloader() {
             transition={logoPulse.transition}
             exit="exit"
           >
-            <NavkarLogo className="h-24 w-24 text-primary" />
+             <Image src="/logo.png" alt="Navkar Logo" width={150} height={150} />
           </motion.div>
         </motion.div>
       )}

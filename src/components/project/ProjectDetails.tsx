@@ -14,6 +14,7 @@ import {
   Award,
 } from "lucide-react";
 import type { projects } from "@/lib/data";
+import { motion } from "framer-motion";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -29,7 +30,7 @@ interface ProjectDetailsProps {
 export function ProjectDetails({ project }: ProjectDetailsProps) {
   const { open: openEnquiryPopup } = useEnquiryStore();
 
-  const reraInfo = project.highlights.find(h => h.toLowerCase().includes("rera"));
+  const reraInfo = project.highlights?.find(h => h.toLowerCase().includes("rera"));
 
   return (
     <div className="bg-background">
@@ -97,7 +98,7 @@ export function ProjectDetails({ project }: ProjectDetailsProps) {
             {/* 3. Overview/Description Block */}
             <section id="overview">
                 <div className="grid md:grid-cols-2 gap-8 items-start">
-                    <div className="aspect-video relative overflow-hidden rounded-lg shadow-md">
+                    <div className="aspect-[4/3] relative overflow-hidden rounded-lg shadow-md">
                         <Image 
                             src={project.gallery[1]?.src ?? project.image} 
                             alt={project.gallery[1]?.alt ?? project.name}
@@ -128,7 +129,7 @@ export function ProjectDetails({ project }: ProjectDetailsProps) {
             <section id="amenities">
                 <h2 className="text-3xl font-bold tracking-tight">Amenities & Features</h2>
                 <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {project.highlights.filter(h => !h.toLowerCase().includes("rera")).map((highlight) => (
+                {(project.highlights?.filter(h => !h.toLowerCase().includes("rera")) ?? []).map((highlight) => (
                     <div key={highlight} className="flex items-center gap-3 p-3 rounded-lg bg-secondary/70">
                         <CheckCircle2 className="h-5 w-5 text-primary shrink-0" />
                         <span className="font-medium text-sm">{highlight}</span>
@@ -142,7 +143,7 @@ export function ProjectDetails({ project }: ProjectDetailsProps) {
                 <h2 className="text-3xl font-bold tracking-tight">Gallery</h2>
                 <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4">
                     {project.gallery.map((image, index) => (
-                        <div key={index} className="aspect-video relative overflow-hidden rounded-lg shadow-md transition-transform hover:scale-105">
+                        <div key={index} className="aspect-[4/3] relative overflow-hidden rounded-lg shadow-md transition-transform hover:scale-105">
                              <Image
                                 src={image.src}
                                 alt={image.alt}
@@ -169,7 +170,7 @@ export function ProjectDetails({ project }: ProjectDetailsProps) {
                             <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(project.location)}`} target="_blank">View on Google Maps</a>
                         </Button>
                     </div>
-                    <div className="aspect-video w-full bg-muted rounded-md overflow-hidden">
+                    <div className="aspect-[4/3] w-full bg-muted rounded-md overflow-hidden">
                          {/* Placeholder for map iframe */}
                          <div className="w-full h-full flex items-center justify-center text-muted-foreground/50">
                              <p>Google Map Preview</p>
@@ -203,6 +204,3 @@ export function ProjectDetails({ project }: ProjectDetailsProps) {
     </div>
   );
 }
-
-// Added motion for a more dynamic feel, but need to import it.
-import { motion } from "framer-motion";

@@ -1,4 +1,4 @@
-
+the error is in featured project section 
 "use client";
 
 import { ShieldCheck, Landmark, Building2, Leaf } from "lucide-react";
@@ -38,7 +38,7 @@ export function WhyNavkar() {
   return (
     <motion.section 
       id="why" 
-      className="py-16 md:py-24 bg-background"
+      className="py-16 md:py-24 bg-secondary/40"
       initial={fadeInAnimation.initial}
       whileInView={fadeInAnimation.whileInView}
       transition={fadeInAnimation.transition}

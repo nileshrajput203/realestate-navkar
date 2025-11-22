@@ -4,7 +4,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
-import { NavkarLogo } from "./NavkarLogo";
+import Image from "next/image";
 import { useEnquiryStore } from "@/hooks/use-enquiry-store";
 
 const navLinks = [
@@ -94,7 +94,7 @@ export function Header() {
             </nav>
 
             <a href="/" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-2 font-bold text-xl">
-              <NavkarLogo className="h-14 w-auto text-white" />
+              <Image src="/logo.png" alt="Navkar Logo" width={100} height={100} />
             </a>
 
             <div className="flex items-center gap-2">

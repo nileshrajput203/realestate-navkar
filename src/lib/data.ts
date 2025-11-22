@@ -11,12 +11,13 @@ export const projects = [
     name: "Navkar Heights",
     location: "Palghar, Maharashtra",
     type: "Residential",
-    status: "Ready-to-move",
+    status: "Sold Out",
     area: "1,200 - 1,800 sq.ft.",
     image: "https://i.postimg.cc/bNYhN3FY/Whats-App-Image-2025-08-25-at-4-55-07-PM-2.jpg",
     aiHint: "modern house",
     reraNo: "P99000012345",
-    description: "Discover modern living at Navkar Heights, a ready-to-move residential project in Palghar. Offering thoughtfully designed 2 & 3 BHK apartments, it combines comfort with the convenience of being located near the railway station, making your daily commute effortless.",
+    description: "Discover modern living at Navkar Heights, a residential project in Palghar. Offering thoughtfully designed 2 & 3 BHK apartments, it combines comfort with the convenience of being located near the railway station, making your daily commute effortless.",
+    amenities: ["24/7 Security", "Children's Play Area", "Landscaped Gardens", "Power Backup"],
     gallery: [
       { src: "https://i.postimg.cc/bNYhN3FY/Whats-App-Image-2025-08-25-at-4-55-07-PM-2.jpg", alt: "Exterior view of Navkar Heights", aiHint: "modern building exterior" },
       { src: "https://i.postimg.cc/8z8mm0QN/Whats-App-Image-2025-08-25-at-4-55-07-PM-1.jpg", alt: "Navkar Heights building front view", aiHint: "modern building" },
@@ -33,6 +34,7 @@ export const projects = [
     aiHint: "luxury apartment",
     reraNo: "P99000067890",
     description: "Experience exquisite living at Nova Exotica. A symbol of modern architecture and luxury, offering spacious apartments with world-class amenities for a truly exotic lifestyle.",
+    amenities: ["Swimming Pool", "Clubhouse", "Gymnasium", "Private Balconies"],
     gallery: [
         { src: "https://i.postimg.cc/HnYGR0pG/top-view-30x40.jpg", alt: "Top view of Nova Exotica", aiHint: "building top view" },
     ],
@@ -41,18 +43,19 @@ export const projects = [
     id: 3,
     name: "Shreeram Sampaada",
     location: "Beside ICICI Bank, Mahim Road, Palghar",
-    type: "Commercial",
+    type: "Residential & Commercial",
     status: "New Launch",
-    area: "Shops: 170-897 sq.ft | Offices: 258-545 sq.ft",
+    area: "Residences: 646-651 sq.ft | Shops: 170-898 sq.ft | Offices: 258-545 sq.ft",
     image: "https://i.postimg.cc/d11VKbR6/shree-Ram-sampada-3-D-Img-page-0001.jpg",
-    aiHint: "modern building",
-    reraNo: "P99000054321",
+    aiHint: "modern mixed-use building",
+    reraNo: "Not Mentioned",
     description: "Shreeram Sampaada is a landmark mixed-use development offering luxurious 2 BHK residences, commercial offices, and anchor shops. Located just 5 minutes from Palghar Railway Station, it is positioned as Palghar's most iconic project, blending luxury living with prime commercial opportunities.",
+    amenities: ["2-level Stack Parking", "Toddlers Play Area", "Gymnasium", "Garden Spaces", "Jogging Track", "Dedicated Commercial Entry"],
     gallery: [
         { src: "https://i.postimg.cc/d11VKbR6/shree-Ram-sampada-3-D-Img-page-0001.jpg", alt: "Shreeram Sampaada 3D view", aiHint: "building 3d model" },
     ],
   },
-    {
+  {
     id: 4,
     name: "Shiv Aashish Industrial Estate",
     location: "Palghar, Maharashtra",
@@ -62,10 +65,27 @@ export const projects = [
     image: "https://i.postimg.cc/C1hpyb0V/Whats-App-Image-2025-08-26-at-5-25-29-PM.jpg",
     aiHint: "industrial estate",
     description: "Shiv Aashish Industrial Estate offers numerous industrial units (galas) under construction. It is an ideal location for businesses looking to expand their operations in a thriving industrial hub.",
+    amenities: ["24/7 Security", "Loading/Unloading Docks", "Ample Parking", "Power Backup"],
     gallery: [
         { src: "https://i.postimg.cc/C1hpyb0V/Whats-App-Image-2025-08-26-at-5-25-29-PM.jpg", alt: "Shiv Aashish Industrial Estate", aiHint: "industrial building" },
     ],
   },
+  {
+    id: 5,
+    name: "Guruji Residency",
+    location: "Tembhode Road, Palghar (West)",
+    type: "Residential",
+    status: "New Launch",
+    area: "Not specified",
+    image: "https://i.postimg.cc/NjW3Bvgk/bldg-1-20x30.jpg",
+    aiHint: "modern apartment building",
+    reraNo: "P99000031100",
+    description: "Guruji Residency is a residential development by Navkar Developers, marketed with the tagline 'The Key to your Happiness.' The project is located opposite Chaphekar College and offers a modern living experience with easy access to local amenities and transportation.",
+    amenities: ["Proximity to College", "Close to NH-8", "Nearby Shops & Services"],
+    gallery: [
+        { src: "https://i.postimg.cc/NjW3Bvgk/bldg-1-20x30.jpg", alt: "Guruji Residency", aiHint: "modern apartment building" },
+    ],
+  }
 ];
 
 export const stats = [
