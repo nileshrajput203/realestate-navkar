@@ -2,7 +2,7 @@
 import { ShieldCheck, Trees, Landmark, Users } from "lucide-react";
 
 export const heroImages: { src: string; alt: string; aiHint: string }[] = [
-  { src: "/banner.png", alt: "Presenting Palghar's Most Iconic Project", aiHint: "modern building exterior" },
+  { src: "/banner1.jpg", alt: "Presenting Palghar's Most Iconic Project", aiHint: "modern building exterior" },
 ];
 
 export const projects = [

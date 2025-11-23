@@ -94,7 +94,7 @@ export function Header() {
             </nav>
 
             <a href="/" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-2 font-bold text-xl">
-              <Image src="/logo.png" alt="Navkar Logo" width={100} height={100} />
+              <Image src="/navkarlogo.png" alt="Navkar Logo" width={100} height={100} />
             </a>
 
             <div className="flex items-center gap-2">

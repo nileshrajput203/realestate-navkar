@@ -9,16 +9,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'i.postimg.cc',
-      },
-      {
-        protocol: 'https',
-        hostname: 'i.imgur.com',
-      },
-    ],
+    unoptimized: true
   },
 };
 
