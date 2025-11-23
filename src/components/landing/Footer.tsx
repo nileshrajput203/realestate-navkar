@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { MessageCircle, Phone } from "lucide-react";
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
-import { NavkarLogo } from './NavkarLogo';
+import Image from 'next/image';
 import { footerLinks } from '@/lib/data';
 
 const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -86,7 +86,7 @@ export function Footer() {
           {/* About Section */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-              <NavkarLogo className="h-10 w-10 text-foreground" />
+              <Image src="/logo.png" alt="Navkar Logo" width={40} height={40} />
               <span className="tracking-tight">Navkar Group</span>
             </Link>
             <p className="text-muted-foreground">
@@ -123,7 +123,8 @@ export function Footer() {
                 >
                   <social.icon className="h-6 w-6" />
                 </a>
-              ))}
+              ))
+}
             </div>
           </div>
         </div>
