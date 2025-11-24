@@ -86,8 +86,7 @@ export function Footer() {
           {/* About Section */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-              <Image src="/logo.png" alt="Navkar Logo" width={40} height={40} />
-              <span className="tracking-tight">Navkar Group</span>
+              <Image src="/logo.png" alt="Navkar Logo" width={80} height={80} />
             </Link>
             <p className="text-muted-foreground">
               Crafting landmarks with integrity and innovation for over a decade.
@@ -123,8 +122,7 @@ export function Footer() {
                 >
                   <social.icon className="h-6 w-6" />
                 </a>
-              ))
-}
+              ))}
             </div>
           </div>
         </div>

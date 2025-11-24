@@ -123,25 +123,25 @@ export const testimonials = [
     quote: "The quality of construction and the attention to detail in our home is outstanding. The team was supportive throughout the process. We are truly happy!",
     author: "Rohan & Priya Mehta",
     location: "Homeowners, Navkar Heights",
-    avatar: "https://i.postimg.cc/wMSy31xT/indian-family-1.jpg",
+    avatar: "/1.jpg",
   },
   {
     quote: "Navkar Group delivered on their promise of a premium living experience. The amenities are fantastic, and the location is perfect for our family. Highly recommended!",
     author: "Anjali Sharma",
     location: "Resident, Nova Exotica",
-    avatar: "https://i.postimg.cc/VvKXf9fD/indian-family-2.jpg",
+    avatar: "/2.jpg",
   },
   {
     quote: "From the initial inquiry to the final handover, the process was seamless. The customer service team is excellent and very responsive. A trustworthy builder.",
     author: "Sandeep Patel",
     location: "Investor",
-    avatar: "https://i.postimg.cc/8cmJgJj3/indian-man-1.jpg",
+    avatar: "/3.jpg",
   },
   {
     quote: "We were impressed by the modern design and the thoughtful layout of the apartment. It feels spacious and gets plenty of natural light. A great investment.",
     author: "The D'souza Family",
     location: "Homeowners, Navkar Heights",
-    avatar: "https://i.postimg.cc/ryC8b1zB/indian-family-3.jpg",
+    avatar: "/4.jpg",
   }
 ];
 

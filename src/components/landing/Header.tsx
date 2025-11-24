@@ -15,8 +15,8 @@ const navLinks = [
   { label: "Contact", href: "/#contact" },
 ];
 
-const leftNavLinks = navLinks.slice(0, 2);
-const rightNavLinks = navLinks.slice(2);
+const leftNavLinks = navLinks.slice(0, 3);
+const rightNavLinks = navLinks.slice(3);
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -76,7 +76,7 @@ export function Header() {
       <header className="absolute top-0 left-0 right-0 z-50">
         <div className="mx-auto max-w-7xl px-4">
           <div className="relative flex items-center justify-between h-20">
-            <nav className="hidden md:flex items-center gap-2">
+            <nav className="hidden md:flex items-center gap-[45px]">
               {leftNavLinks.map((link) => (
                 <a
                   key={link.href}
@@ -93,12 +93,12 @@ export function Header() {
               ))}
             </nav>
 
-            <a href="/" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-2 font-bold text-xl">
+            <a href="/" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-2 font-bold text-xl mx-[70px]">
               <Image src="/navkarlogo.png" alt="Navkar Logo" width={100} height={100} />
             </a>
 
             <div className="flex items-center gap-2">
-                <nav className="hidden md:flex items-center gap-2">
+                <nav className="hidden md:flex items-center gap-[45px]">
                   {rightNavLinks.map((link) => (
                     <a
                       key={link.href}
